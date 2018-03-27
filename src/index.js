@@ -1,5 +1,6 @@
 import React from 'react'
 import Quill from 'quill'
+import PropTypes from 'prop-types'
 
 class ReactQuill extends React.Component {
   constructor (props) {
@@ -51,9 +52,9 @@ class ReactQuill extends React.Component {
 }
 
 ReactQuill.propTypes = {
-  options: React.PropTypes.object,
-  events: React.PropTypes.object,
-  onChange: React.PropTypes.func
+  options: PropTypes.object,
+  events: PropTypes.object,
+  onChange: PropTypes.func
 }
 
 export default ReactQuill
